@@ -6,20 +6,20 @@ import { Play, ChevronLeft, ChevronRight } from "lucide-react"
 
 export default function Media() {
   return (
-    <div className="bg-shell-white">
-      {/* Hero Section */}
-      <section className="relative py-20 bg-gray-100">
-        <div className="container-custom">
-          <div className="max-w-3xl">
-            <h1 className="text-saffron mb-6">Media Gallery</h1>
-            <p className="text-lg mb-0">
-              Explore photos and videos from our events, celebrations, and community gatherings.
-            </p>
+    <>
+      <div className="bg-shell-white">
+        {/* Hero Section */}
+        <section className="relative py-20 bg-gray-100">
+          <div className="container-custom">
+            <div className="max-w-3xl">
+              <h1 className="text-saffron mb-6">Media Gallery</h1>
+              <p className="text-lg mb-0">
+                Explore photos and videos from our events, celebrations, and community gatherings.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
-
+        </section>
+      </div>
 
       {/* Gallery Tabs */}
       <section className="section-padding">
@@ -31,6 +31,12 @@ export default function Media() {
             <button className="px-6 py-3 font-medium text-gray-600 hover:text-saffron">Community</button>
             <button className="px-6 py-3 font-medium text-gray-600 hover:text-saffron">Temple Progress</button>
           </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
 
           {/* Photo Gallery */}
           <div className="mb-16">
