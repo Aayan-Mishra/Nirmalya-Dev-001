@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --shell-white: #f8f7f2;
+  --saffron: #ff7722;
+  --saffron-light: #ff9955;
+  --saffron-dark: #e05500;
+  --maroon: #8b2323;
+  --text-dark: #333333;
+}
+
+@layer base {
+  body {
+    @apply bg-shell-white text-text-dark;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-poppins font-semibold;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  p {
+    @apply font-inter;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 119, 34, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 119, 34, 0.6), 0 0 30px rgba(255, 119, 34, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 119, 34, 0.3);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-subtle {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-saffron hover:bg-saffron-dark text-white font-medium py-2 px-6 rounded-md transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-white border-2 border-saffron text-saffron hover:bg-saffron hover:text-white font-medium py-2 px-6 rounded-md transition-colors duration-300;
+  }
+
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:shadow-lg;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron;
+  }
+
+  .membership-card {
+    @apply transition-all duration-500;
+  }
+
+  .membership-card:hover {
+    animation: glow 2s infinite;
+    @apply border-saffron;
+  }
+
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .spinning-element {
+    animation: spin-slow 20s linear infinite;
+  }
+
+  .pulsing-element {
+    animation: pulse-subtle 4s ease-in-out infinite;
+  }
+
+  .value-card {
+    @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 relative overflow-hidden border-2 border-transparent;
+  }
+
+  .value-card:hover {
+    @apply border-saffron transform -translate-y-1 shadow-lg;
+  }
+
+  .value-card::before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-1 bg-saffron transform scale-x-0 transition-transform duration-300 origin-left;
+  }
+
+  .value-card:hover::before {
+    @apply transform scale-x-100;
+  }
+
+  .saffron-divider {
+    @apply relative h-px w-full my-12 bg-gray-200 overflow-hidden;
+  }
+
+  .saffron-divider::before {
+    content: "";
+    @apply absolute top-0 left-1/2 -translate-x-1/2 h-px w-32 bg-saffron;
+  }
+
+  .saffron-divider::after {
+    content: "";
+    @apply absolute top-0 left-1/2 -translate-x-1/2 h-3 w-3 rounded-full bg-saffron -mt-1;
+  }
+}
