@@ -249,7 +249,7 @@ export default function Media() {
               className="group relative aspect-square overflow-hidden rounded-lg"
             >
               <Image
-                src="/cdn/instagram/post1.jpg"
+                src="/cdn/events/post-1.png"
                 alt="Instagram post 1"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-110"
