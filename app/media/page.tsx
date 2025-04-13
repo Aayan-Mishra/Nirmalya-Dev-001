@@ -243,7 +243,7 @@ export default function Media() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/p/DGrUveJoPWx/"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative aspect-square overflow-hidden rounded-lg"
