@@ -57,14 +57,14 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 pt-2">
               <Link
-                href="https://facebook.com"
+                href="https://facebook.com/nirmalyaaus"
                 className="text-gray-600 hover:text-saffron transition-colors"
               >
                 <Facebook size={20} />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
-                href="https://instagram.com"
+                href="https://instagram.com/nirmalyaaus"
                 className="text-gray-600 hover:text-saffron transition-colors"
               >
                 <Instagram size={20} />
@@ -78,7 +78,7 @@ const Footer = () => {
                 <span className="sr-only">Twitter</span>
               </Link>
               <Link
-                  href="https://youtube.com"
+                  href="https://youtube.com/nirmalyaaus"
                   className="text-gray-600 hover:text-saffron transition-colors"
               >
                 <Youtube size={20} />
@@ -152,7 +152,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 text-saffron shrink-0" />
-                <span className="text-gray-600">+61 2 1234 5678</span>
+                <span className="text-gray-600">+61 434 477 837</span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-saffron shrink-0" />
