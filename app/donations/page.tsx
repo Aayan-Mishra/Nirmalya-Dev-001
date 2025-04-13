@@ -16,7 +16,7 @@ export default function Donations() {
   // Bank details
   const bankDetails = {
     bsb: "062-711",
-    accountNumber: "1003-0571",
+    accountNumber: "10030571",
     accountName: "Nirmalya Incorporated",
     payId: "42760631934",
   }
